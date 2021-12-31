@@ -1,0 +1,313 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e1f0ff;
+  color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  max-width: 100vw;
+  font-family: "Rubik", sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  position: relative;
+  outline: none;
+}
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/**********************************************************
+
+                        01:   HEADER
+
+**********************************************************/
+
+.hero {
+  position: relative;
+  background-color: #007ae8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23007AE8' cx='50' cy='0' r='50'/%3E%3Cg fill='%230076e9' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%230073ea' cx='50' cy='100' r='50'/%3E%3Cg fill='%23006feb' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23006bec' cx='50' cy='200' r='50'/%3E%3Cg fill='%230067ed' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%230063ee' cx='50' cy='300' r='50'/%3E%3Cg fill='%23005fee' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23005bee' cx='50' cy='400' r='50'/%3E%3Cg fill='%230056ef' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%230052ef' cx='50' cy='500' r='50'/%3E%3Cg fill='%23004dee' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%230048ee' cx='50' cy='600' r='50'/%3E%3Cg fill='%230043ee' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23003ded' cx='50' cy='700' r='50'/%3E%3Cg fill='%230037ec' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%230031eb' cx='50' cy='800' r='50'/%3E%3Cg fill='%230029ea' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%230020e8' cx='50' cy='900' r='50'/%3E%3Cg fill='%230015e7' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%230800E5' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.navbar {
+  padding: 1rem;
+  height: 81.85px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar-expand-lg .navbar-collapse {
+  margin-top: 22.925px;
+}
+
+.navbar-brand img {
+  height: 38px;
+}
+
+.nav-item svg {
+  transform: scale(1.7);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.75;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  opacity: 1 !important;
+}
+
+.hero .text-group {
+  padding: 7rem 0 4rem;
+}
+
+.hero .text-group h1 {
+  color: white;
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.btn-main {
+  background-color: white;
+  color: #0016e7;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn-rm {
+  background-color: white;
+  color: #0016e7;
+  border-radius: 50px;
+  padding: .5rem 1rem;
+}
+
+/**********************************************************
+
+                          02:   CTA
+
+**********************************************************/
+
+.cta {
+  margin-top: -5.5rem;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  z-index: 99;
+}
+
+.cta img {
+  height: 60px;
+}
+
+.btn-cta {
+  background-color: #e1f0ff;
+  color: #0016e7;
+  border-radius: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1.25rem 1.75rem;
+}
+
+.showcase {
+  background-color: #e1f0ff;
+  margin-top: -5px;
+}
+
+.section-title h6 {
+font-size: .9rem;
+vertical-align: bottom;
+
+  display: inline;
+  color: #0016e7;
+  padding: 5px 15px;
+  border-radius: 50px;
+  background-color: rgba(0, 22, 231, 0.25);
+}
+
+.section-title h4 {
+	
+  font-weight: 600;
+}
+
+.owl-carousel:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #e1f0ff, transparent, #e1f0ff);
+}
+
+.showcase-card {
+  margin: 0 1rem;
+}
+
+/**********************************************************
+
+                          03:   Story
+
+**********************************************************/
+
+#story img,
+#roadmap img {
+  border-radius: 16px;
+  float: right;
+  float: right;
+}
+
+#story p {
+  color: #0080ff;
+}
+
+.user-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 15px;
+}
+
+.user-card img {
+  border-radius: 16px;
+}
+
+#extended-story {
+  display: none;
+}
+
+/**********************************************************
+
+                    04:   Roadmap & FAQ
+
+**********************************************************/
+
+#roadmap {
+  background: linear-gradient(to bottom, #e1f0ff, white);
+}
+
+#faq {
+  background: #fff;
+}
+
+.faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq-list li {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 15px 40px;
+  margin-bottom: 20px;
+}
+
+.faq-list a {
+  display: block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq-list i {
+  font-size: 18px;
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  transition: 0.3s;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 17px;
+  border-bottom: 2px dashed #ffffff;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+
+.faq-list p {
+  padding-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.collapsed i.fas.fa-arrow-up {
+  transform: rotate(180deg);
+}
+
+/**********************************************************
+
+                    04:   Footer & Responsive
+
+**********************************************************/
+
+footer {
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .text-group h1 {
+    font-size: 3.5rem;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .desktop-hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-hide {
+    display: none;
+  }
+
+  .navbar {
+    height: auto;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    margin-top: 0;
+  }
+
+  .m-d-block {
+    display: block !important;
+  }
+
+  .m-d-block .cta-btn {
+    margin-left: 0 !important;
+  }
+
+  .m-d-block .btn-cta {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
